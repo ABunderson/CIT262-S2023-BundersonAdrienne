@@ -1,0 +1,22 @@
+{
+  "name": "nodejsexample",
+  "version": "1.0.0",
+  "description": "\"First NoeJS project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABunderson/CIT262-S2023-BundersonAdrienne.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Adrienne Bunderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABunderson/CIT262-S2023-BundersonAdrienne/issues"
+  },
+  "homepage": "https://github.com/ABunderson/CIT262-S2023-BundersonAdrienne#readme"
+}
