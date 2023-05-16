@@ -54,7 +54,7 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
                style={styles.sendButton}
               onPress={async ()=>{
                 console.log(phoneNumber+' Button was pressed')
-                const name = "John";
+                const name = "Adrienne";
                 Alert.alert("Hello " + name);
     
                 // const sendTextResponse=await fetch(
