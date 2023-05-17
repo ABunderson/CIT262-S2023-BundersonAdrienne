@@ -54,6 +54,8 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
                style={styles.sendButton}
               onPress={async ()=>{
                 console.log(phoneNumber+' Button was pressed')
+
+                // The function is written at the very end of this file
                 sayHello("Adrienne");
     
                 // const sendTextResponse=await fetch(
@@ -140,10 +142,6 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
 }
 
 export default Login
-
-
-
- 
  const styles = StyleSheet.create({
      container:{
          alignItems:'center',
