@@ -54,8 +54,7 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
                style={styles.sendButton}
               onPress={async ()=>{
                 console.log(phoneNumber+' Button was pressed')
-                const name = "Adrienne";
-                Alert.alert("Hello " + name);
+                sayHello("Adrienne");
     
                 // const sendTextResponse=await fetch(
                 //   'https://dev.stedi.me/twofactorlogin/'+phoneNumber,
@@ -74,7 +73,7 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
                 // }
               }}
             >
-              <Text style={{color:'white'}}>Send</Text>      
+              <Text style={{color:'white'}}>Say Hello</Text>      
             </TouchableOpacity>
     
           </View>
@@ -209,3 +208,9 @@ export default Login
     }
   
  })
+
+ function sayHello(name) {
+  const message = "Hello " + name;
+  Alert.alert(message);
+  console.log(message);
+ }
