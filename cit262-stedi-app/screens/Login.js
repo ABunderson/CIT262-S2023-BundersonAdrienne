@@ -56,23 +56,24 @@ const Login = ({loggedInState, loggedInStates,setLoggedInState})=>{
                 console.log(phoneNumber+' Button was pressed')
 
                 // The function is written at the very end of this file
-                sayHello("Adrienne");
+                // sayHello("Adrienne");
     
-                // const sendTextResponse=await fetch(
-                //   'https://dev.stedi.me/twofactorlogin/'+phoneNumber,
-                //   {
-                //     method:'POST',
-                //     headers:{
-                //      'content-type':'application/text'
-                //    }
-                //   }
-                // )
-                // const sendTextResponseData = await sendTextResponse.text();
-                // if(sendTextResponse.status!=200){//invalid phone number, send them to the signup page
-                //   await Alert.alert("Did you type your number correctly? "+phoneNumber);
-                // } else{
-                //   setLoggedInState(loggedInStates.LOGGING_IN);
-                // }
+                const sendTextResponse=await fetch(
+                  'https://dev.stedi.me/twofactorlogin/'+phoneNumber,
+                  {
+                    method:'POST',
+                    headers:{
+                     'content-type':'application/text'
+                   }
+                  }
+                )
+                const sendTextResponseData = await sendTextResponse.text();
+                console.log(sendTextResponseData);
+                if(sendTextResponse.status!=200){//invalid phone number, send them to the signup page
+                  await Alert.alert("Did you type your number correctly? "+phoneNumber);
+                } else{
+                  setLoggedInState(loggedInStates.LOGGING_IN);
+                }
               }}
             >
               <Text style={{color:'white'}}>Say Hello</Text>      
