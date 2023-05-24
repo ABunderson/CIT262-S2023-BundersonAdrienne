@@ -4,4 +4,6 @@ const sayHello=()=>{
     return message;
 }
 
+sayHello();
+
 export default sayHello;
